@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>For You 💙</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Stars Background -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Moon -->
+    <div class="moon" id="moon">
+        <div class="moon-crater"></div>
+        <div class="moon-crater"></div>
+        <div class="moon-crater"></div>
+        <div class="moon-crater"></div>
+    </div>
+
+    <!-- Clouds -->
+    <div class="cloud cloud-1" id="cloud1">
+        <div class="cloud-body"></div>
+    </div>
+    <div class="cloud cloud-2" id="cloud2">
+        <div class="cloud-body"></div>
+    </div>
+
+    <!-- Final Glow -->
+    <div class="final-glow" id="finalGlow"></div>
+
+    <!-- Music Toggle -->
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">🎵</button>
+
+    <!-- Transition Overlay -->
+    <div class="transition-overlay" id="transitionOverlay"></div>
+
+    <!-- Progress Dots -->
+    <div class="progress-dots" id="progressDots"></div>
+
+    <!-- ===== SCREENS ===== -->
+
+    <!-- Screen 0: Welcome -->
+    <div class="screen active" id="screen0">
+        <div class="welcome-wrapper">
+            <div class="welcome-icon">🌙</div>
+            <p class="screen-text">I made something for you.</p>
+            <p class="screen-text small">Tap anywhere to begin.</p>
+        </div>
+    </div>
+
+    <!-- Screen 1 -->
+    <div class="screen" id="screen1">
+        <p class="screen-text">Hey you. 👋</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap anywhere</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 2 -->
+    <div class="screen" id="screen2">
+        <p class="screen-text">I made something stupid. 😅</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 3 -->
+    <div class="screen" id="screen3">
+        <p class="screen-text">But you're already here<br>so you might as well continue. 🤷</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="screen" id="screen4">
+        <p class="screen-text">Look up. ☝️<br><br><em>See those stars?</em></p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 5 -->
+    <div class="screen" id="screen5">
+        <p class="screen-text">I put them there.<br><br><em>All for you.</em> ✨</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 6 -->
+    <div class="screen" id="screen6">
+        <p class="screen-text">Okay fine, I didn't. 😂<br><br>But I <em>would</em> if I could.</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 7 -->
+    <div class="screen" id="screen7">
+        <p class="screen-text">You know what I <em>can</em> do though?</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 8 -->
+    <div class="screen" id="screen8">
+        <p class="screen-text">Remind you that<br>you're <em>pretty amazing.</em> 💙</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 9 -->
+    <div class="screen" id="screen9">
+        <p class="screen-text">Like... <em>really</em> amazing.<br><br>Don't argue with me. 😤</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 10 -->
+    <div class="screen" id="screen10">
+        <p class="screen-text">Anyway...<br><br>it's getting late. 🌙</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 11 -->
+    <div class="screen" id="screen11">
+        <p class="screen-text">You should probably<br>get some sleep. 😴</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 12 -->
+    <div class="screen" id="screen12">
+        <p class="screen-text">But before you go...</p>
+        <div class="tap-indicator">
+            <span class="tap-text">tap</span>
+            <div class="tap-arrow"></div>
+        </div>
+    </div>
+
+    <!-- Screen 13 - Final -->
+    <div class="screen" id="screen13">
+        <div class="big-heart">💙</div>
+        <p class="screen-text dancing">
+            Goodnight, Aki <span class="heart-color">💙</span>
+        </p>
+        <p class="screen-text small final-sub">Sweet dreams. You deserve them. ✨</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
